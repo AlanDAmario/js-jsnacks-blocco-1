@@ -1,0 +1,19 @@
+'use strict';
+//ASSEGNO UN ARREY VUOTA ALL UTENTE
+const emptyAr = [];
+//ASSEGNO UN VARIABILE AL NUMERO DA UTILIZZARE ALL INTERNO DEL CICLO
+let nr = 0;
+//INIZIO CICLO PER CHIEDERE 6 VOLTE TRAMITE UN PROPMT DI INSERIRE UN NUMERO 
+for (let i = 0; i < 6; i++) {
+    //METODO UTILIZZATO PER IL PROMPT 
+    nr = parseInt(prompt(`${i + 1} 'inserisci numero'`));
+    //DEFINIRE CHE IL RISUTATO DEL NR è DISPARI = 1 SE, PARI = 0
+    if (nr % 2 === 1) {
+        // CON L ELEMENTO PUSH ANDAIMO AD AGGIUNGERE IN CODA I NR (DISPARI SE PRESENTI) NELL ARRAY VUOTA CREATA PRECENDEMENTE
+        emptyAr.push(nr);
+    }
+}
+//STAMPA DEL NUMERO SU LOG
+console.log(emptyAr);
+
+
