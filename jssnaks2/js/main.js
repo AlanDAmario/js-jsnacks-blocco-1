@@ -15,4 +15,6 @@ if (wordLen1 > wordLen2) {
     console.log(wordLen1, 'stampo parola 1');
 } else if (wordLen2 > wordLen1) {
     console.log(wordLen2, 'stampo parola 2');
-} 
+} else {
+    console.log(`${wordLen1} è lunga come ${wordLen2}`);
+}
